@@ -61,7 +61,7 @@ void setupKeymap() {
         KC_GRAVE,   KC_F1,      KC_F2,    KC_F3,    KC_F4,   KC_F5,     OUT_USB,\
         OUT_AUTO,   KC_EXLM,    KC_AT,    KC_LCBR,  KC_RCBR, KC_PIPE,   OUT_BT,\
         _______,    KC_HASH,    KC_DLR,   KC_LBRC,  KC_RBRC, KC_GRAVE,  _______,\
-        KC_LSHIFT,    KC_PERC,    KC_CARET, KC_LPRN,  KC_RPRN, KC_TILD,   _______,\
+        KC_LSHIFT,  KC_PERC,    KC_CARET, KC_LPRN,  KC_RPRN, KC_TILD,   _______,\
         _______,    _______,    _______,  _______,  _______, _______,   _______\
 );
 
