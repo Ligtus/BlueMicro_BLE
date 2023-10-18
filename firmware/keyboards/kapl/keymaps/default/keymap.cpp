@@ -129,7 +129,7 @@ void setupKeymap() {
         _______,                _______,                _______, _______, _______,              _______,            _______,\
         _______,                _______,                _______, _______, _______,              KC_VOLU,            KC_MUTE,\
         KC_MEDIA_PLAY_PAUSE,    KC_MEDIA_PLAY_PAUSE,    _______, _______, KC_MEDIA_PREV_TRACK,  KC_VOLU,            KC_MEDIA_NEXT_TRACK\
-)
+);
 
     /*
      * add the other layers
