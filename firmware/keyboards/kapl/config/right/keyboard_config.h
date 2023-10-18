@@ -21,51 +21,51 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define KEYBOARD_CONFIG_H
 #include "hardware_config.h"
 
+
+
 //#define KEYBOARD_SIDE SINGLE
-#define KEYBOARD_SIDE LEFT
+#define KEYBOARD_SIDE RIGHT
 // CHANGE THIS FOR THE KEYBOARD TO MATCH WHAT IS BEING FLASHED. OPTIONS: LEFT  RIGHT  SINGLE
 
-#define DEVICE_NAME_R                        "Lily58_R"                          /**< Name of device. Will be included in the advertising data. */
-#define DEVICE_NAME_L                        "Lily58_L"                          /**< Name of device. Will be included in the advertising data. */
-#define DEVICE_NAME_M                        "Lily58BLE"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME_R                        "Kapl_R"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME_L                        "Kapl_L"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME_M                        "KaplKeyboard"                          /**< Name of device. Will be included in the advertising data. */
 
-#define DEVICE_MODEL                         "Lily58BLE_V1"                          /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_MODEL                         "KaplKeyboard_V1"                          /**< Name of device. Will be included in the advertising data. */
 
-#define MANUFACTURER_NAME                    "F_YUUCHI"                      /**< Manufacturer. Will be passed to Device Information Service. */
-
+#define MANUFACTURER_NAME                    "Ligtus"                      /**< Manufacturer. Will be passed to Device Information Service. */
 
 
 #if KEYBOARD_SIDE == RIGHT
 #define KEYMAP( \
-      R00, R01, R02, R03, R04, R05, \
-      R10, R11, R12, R13, R14, R15, \
-      R20, R21, R22, R23, R24, R25, \
-  R45, R30, R31, R32, R33, R34, R35, \
-  R41, R42, R43, R44 \
+      R00, R01, R02, R03, R04, R05, R06 \
+      R10, R11, R12, R13, R14, R15, R16 \
+      R20, R21, R22, R23, R24, R25, R26 \
+      R30, R31, R32, R33, R34, R35, R36 \
+      R40, R41, R42, R43, R44, R45, R46 \
   ) \
   { \
-    { R05, R04, R03, R02, R01, R00 }, \
-    { R15, R14, R13, R12, R11, R10 }, \
-    { R25, R24, R23, R22, R21, R20 }, \
-    { R35, R34, R33, R32, R31, R30 }, \
-    { KC_NO,R44,R43, R42, R41, R45 } \
+    { R06, R05, R04, R03, R02, R01, R00 }, \
+    { R16, R15, R14, R13, R12, R11, R10 }, \
+    { R26, R25, R24, R23, R22, R21, R20 }, \
+    { R36, R35, R34, R33, R32, R31, R30 }, \
+    { R46, R45, R44, R43, R42, R41, R40 } \
   }
 #else
 #define KEYMAP( \
-  L00, L01, L02, L03, L04, L05,\
-  L10, L11, L12, L13, L14, L15, \
-  L20, L21, L22, L23, L24, L25,\
-  L30, L31, L32, L33, L34, L35, L45, \
-                 L41, L42, L43, L44\
+  L00, L01, L02, L03, L04, L05, L06,\
+  L10, L11, L12, L13, L14, L15, L16,\
+  L20, L21, L22, L23, L24, L25, L26,\
+  L30, L31, L32, L33, L34, L35, L36,\
+  L40, L41, L42, L43, L44, L45, L46\
   ) \
   { \
-    { L00, L01, L02, L03, L04, L05 }, \
-    { L10, L11, L12, L13, L14, L15 }, \
-    { L20, L21, L22, L23, L24, L25 }, \
-    { L30, L31, L32, L33, L34, L35 }, \
-    { KC_NO,L41,L42, L43, L44, L45 } \
+    { L00, L01, L02, L03, L04, L05, L06 }, \
+    { L10, L11, L12, L13, L14, L15, L16 }, \
+    { L20, L21, L22, L23, L24, L25, L26 }, \
+    { L30, L31, L32, L33, L34, L35, L36 }, \
+    { L40, L41, L42, L43, L44, L45, L46 } \
   } 
-
 #endif
 
 #endif /* KEYBOARD_CONFIG_H */
