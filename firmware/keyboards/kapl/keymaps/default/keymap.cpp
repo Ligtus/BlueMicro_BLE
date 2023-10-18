@@ -67,10 +67,10 @@ void setupKeymap() {
 
     uint32_t layer2[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
+        KC_BSLS, KC_PIPE, KC_AT,   KC_HASH, KC_TILD, _______, _______,\
         _______, _______, _______, _______, _______, _______, _______,\
         _______, _______, _______, _______, _______, _______, _______,\
-        _______, _______, _______, _______, _______, _______, _______,\
-        _______, _______, _______, _______, _______, _______, _______,\
+        _______, KC_LT,   KC_GT,   _______, _______, _______, _______,\
         _______, _______, _______, _______, _______, _______, _______\
 );
 
@@ -115,7 +115,7 @@ void setupKeymap() {
     uint32_t layer1[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
         KC_PSCREEN,    KC_F6,           KC_F7,    KC_F8,        KC_F9,          KC_F10,         KC_F11,\
-        _______,       KC_KP_SLASH,     KC_KP7,   KC_KP_8,      KC_KP_9,        KC_KP_MINUS,    KC_F12,\
+        _______,       KC_KP_SLASH,     KC_KP_7,  KC_KP_8,      KC_KP_9,        KC_KP_MINUS,    KC_F12,\
         _______,       KC_KP_ASTERISK,  KC_KP_4,  KC_KP_5,      KC_KP_6,        KC_KP_PLUS,     KC_F13,\
         _______,       _______,         KC_KP_1,  KC_KP_2,      KC_KP_3,        KC_KP_ENTER,    KC_F14,\
         _______,       _______,         KC_KP_0,  KC_DOT,       KC_KP_ENTER,    KC_KP_DOT,      KC_F15\
