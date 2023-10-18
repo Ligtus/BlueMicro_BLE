@@ -58,11 +58,11 @@ void setupKeymap() {
 
     uint32_t layer1[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
-        KC_GRAVE,   KC_F1,      KC_F2,    KC_F3,    KC_F4,   KC_F5,     OUT_USB,\
-        OUT_AUTO,   KC_EXLM,    KC_AT,    KC_LCBR,  KC_RCBR, KC_PIPE,   OUT_BT,\
-        _______,    KC_HASH,    KC_DLR,   KC_LBRC,  KC_RBRC, KC_GRAVE,  _______,\
-        KC_LSHIFT,  KC_PERC,    KC_CIRC,  KC_LPRN,  KC_RPRN, KC_TILD,   _______,\
-        _______,    _______,    _______,  _______,  _______, _______,   _______\
+        KC_GRAVE,           KC_F1,      KC_F2,    KC_F3,    KC_F4,   KC_F5,     OUT_USB,\
+        OUT_AUTO,           KC_EXLM,    KC_AT,    KC_LCBR,  KC_RCBR, KC_PIPE,   OUT_BT,\
+        _______,            KC_HASH,    KC_DLR,   KC_LBRC,  KC_RBRC, KC_GRAVE,  _______,\
+        KC_LSHIFT,          KC_PERC,    KC_CIRC,  KC_LPRN,  KC_RPRN, KC_TILD,   _______,\
+        KC_SYSTEM_RESET,    _______,    _______,  _______,  _______, _______,   _______\
 );
 
     uint32_t layer2[MATRIX_ROWS][MATRIX_COLS] =
@@ -124,12 +124,12 @@ void setupKeymap() {
 
     uint32_t layer2[MATRIX_ROWS][MATRIX_COLS] =
         KEYMAP( \
+        _______,                _______,                _______, _______, _______,              _______,            KC_SYSTEM_RESET,\
         _______,                _______,                _______, _______, _______,              _______,            _______,\
         _______,                _______,                _______, _______, _______,              _______,            _______,\
-        _______,                _______,                _______, _______, _______,              _______,            _______,\
-        _______,                _______,                _______, _______, _______,              KC_AUDIO_VOL_UP,    KC_MUTE,\
-        KC_MEDIA_PLAY_PAUSE,    KC_MEDIA_PLAY_PAUSE,    _______, _______, KC_MEDIA_PREV_TRACK,  KC_AUDIO_VOL_DOWN,  KC_MEDIA_NEXT_TRACK\
-);
+        _______,                _______,                _______, _______, _______,              KC_VOLU,            KC_MUTE,\
+        KC_MEDIA_PLAY_PAUSE,    KC_MEDIA_PLAY_PAUSE,    _______, _______, KC_MEDIA_PREV_TRACK,  KC_VOLU,            KC_MEDIA_NEXT_TRACK\
+)
 
     /*
      * add the other layers
