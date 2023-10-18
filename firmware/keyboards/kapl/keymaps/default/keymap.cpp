@@ -60,9 +60,9 @@ void setupKeymap() {
         KEYMAP( \
         KC_GRAVE,   KC_F1,      KC_F2,    KC_F3,    KC_F4,   KC_F5,     OUT_USB,\
         OUT_AUTO,   KC_EXLM,    KC_AT,    KC_LCBR,  KC_RCBR, KC_PIPE,   OUT_BT,\
-        _______,    KC_HASH,    KC_DLLR,  KC_LBRC,  KC_RBRC, KC_GRAVE,  _______,\
-        KC_LSFT,    KC_PRCNT,   KC_CARET, KC_LPAR,  KC_RPAR, KC_TILDE,  _______,\
-        _______,    _______,    _______,  _______,  _______, _______,    \
+        _______,    KC_HASH,    KC_DLR,   KC_LBRC,  KC_RBRC, KC_GRAVE,  _______,\
+        KC_LSHIFT,    KC_PERC,    KC_CARET, KC_LPRN,  KC_RPRN, KC_TILD,   _______,\
+        _______,    _______,    _______,  _______,  _______, _______,   _______\
 );
 
     uint32_t layer2[MATRIX_ROWS][MATRIX_COLS] =
@@ -100,11 +100,11 @@ void setupKeymap() {
 
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {KEYMAP(
-        KC_HOME,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,       KC_MINUS,\
-        KC_END,     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,       KC_EQUAL,\
-        KC_RBRC,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCOLON,  KC_SQT,\
+        KC_HOME,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,       KC_MINS,\
+        KC_END,     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,       KC_EQL,\
+        KC_RBRC,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCOLON,  KC_QUOT,\
         LAYER_2,    KC_N,    KC_M,    KC_COMMA,KC_DOT,  KC_UP,      KC_RSHIFT,\
-        KC_ENTER,   KC_SPC,  KC_BSPC, KC_FSLH, KC_LEFT, KC_DOWN,    KC_RIGHT\
+        KC_ENTER,   KC_SPC,  KC_BSPC, KC_SLASH,KC_LEFT, KC_DOWN,    KC_RIGHT\
     )};
 
  
